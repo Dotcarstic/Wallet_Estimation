@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/calculate.js">
+        <script type="text/javascript" src="/path/to/brython.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.1.1/math.js">
+    </script>
+        
+      
+    </script>
+  </head>
+  <body>
+    <label for="dateInput">When do you think cryptos will get to their ATH :</label>
+    <input type="date" id="dateInput" />
+    <br />
+    <br />
+    <label for="investInput">Investissement hebdomadaire :</label>
+    <input type="number" id="investInput" />€
+    <br />
+    <label for="cryptoInput">Cryptos :</label>
+    <br />
+    
+    <div id="bnbcheck">
+        BNB
+    <input type="checkbox" id="bnbInput" ></input>
+    <div id="bnbappear" style="visibility: hidden;">
+        <input type="number"/>%
+    </div>
+   
+    <div>
+        ETH
+        <input type="checkbox" id="ethInput" value="eth"></input>
+        <div id="ethappear" style="visibility: hidden;">
+            <input type="number"/>%
+        </div>
+   
+    <div>
+        GALA
+        <input type="checkbox" id="galaInput" value="gala"></input>
+        <div id="galaappear" style="visibility: hidden;">
+            <input type="number"/>%
+        </div>
+    </div>
+   
+    <div>
+        ADA
+        <input type="checkbox" id="adaInput" value="ada"></input>
+        <div id="adaappear" style="visibility: hidden;">
+            <input type="number"/>%
+        </div>
+
+    </div>
+    
+    <div>
+        BTC
+        <input type="checkbox" id="btcInput" ></input>
+        <div id="btcappear" style="visibility: hidden;">
+            <input type="number"/>%
+        </div>
+    <br />
+    <br />
+    
+    <br />
+    <button onclick="calculateWeeks()">Calculer</button>
+    <br />
+    <button onclick="investissement(0.89,0.042,82,60,0.2)">Clique poulet</button>
+    <div id="matrice"></div>
+    
+    
+    <script>
+      
+    
+      changeElement("btcInput", "btcappear");
+      changeElement("bnbInput", "bnbappear");
+      changeElement("adaInput", "adaappear");
+      changeElement("galaInput", "galaappear");
+      changeElement("ethInput", "ethappear");
+      
+      
+    </script>
+    
+  </body>
+</html>
