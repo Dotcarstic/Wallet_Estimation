@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/wallet.js"> </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>Portefeuille crypto</h1>
+    <form>
+      Nombre de BNB: <input type="text" id="BNBAmount" /><br>
+      Nombre de ADA: <input type="text" id="ADAAmount" /><br>
+      Nombre de GALA: <input type="text" id="GALAAmount" /><br>
+      Nombre de ETH: <input type="text" id="ETHAmount" /><br>
+      <button type="submit">Calculer la valeur totale</button>
+    </form>
+    <br>
+    <p>
+      Valeur actuelle de BNB: <span id="BNB"></span>
+    </p>
+    <p>
+      Valeur actuelle de ADA: <span id="ADA"></span>
+    </p>
+    <p>
+      Valeur actuelle de GALA: <span id="GALA"></span>
+    </p>
+    <p>
+      Valeur actuelle de ETH: <span id="ETH"></span>
+    </p>
+    <div id="prices"></div>
+    <br>
+    <div id="bnb"></div>
+    <div id="eth"></div>
+    <div id="ada"></div>
+    <div id="gala"></div>
+    <div id="btc"></div>
+
+    <p>
+      Montant total du portefeuille : <span id="total"></span>
+    </p>
+    <button>
+        <a href="simulation.html">
+            Faire une simulation
+        </a>
+    </button>
+    
+  </body>
+</html>
