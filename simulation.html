@@ -2,12 +2,14 @@
 <html>
   <head>
     <script src="js/calculate.js">
-        <script type="text/javascript" src="/path/to/brython.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.1.1/math.js">
     </script>
-        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="path/to/chartjs/dist/chart.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
       
     </script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
   </head>
   <body>
     <label for="dateInput">When do you think cryptos will get to their ATH :</label>
@@ -63,18 +65,28 @@
     <br />
     <button onclick="calculateWeeks()">Calculer</button>
     <br />
+    <div id="result">
+
+    </div>
+    </div>
     <button onclick="investissement(0.89,0.042,82,60,0.2)">Clique poulet</button>
     <div id="matrice"></div>
+    <button onclick="creategraph(myChart)">Clique</button>
+    <div id="acquisitions"></div>
+
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
     
     
     <script>
-      
+    
     
       changeElement("btcInput", "btcappear");
       changeElement("bnbInput", "bnbappear");
       changeElement("adaInput", "adaappear");
       changeElement("galaInput", "galaappear");
       changeElement("ethInput", "ethappear");
+    
+      
       
       
     </script>
